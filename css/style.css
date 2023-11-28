@@ -1,0 +1,131 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    align-items: center;
+    margin: 0;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    padding:5px;
+}
+nav ul li{
+    padding: 5px;
+    margin-right: 10px;
+    color: white;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+.iti_logo{
+
+    width: 200px;
+    height: 70px;
+}
+ul li , ol li{
+    text-transform: capitalize;
+}
+h1{
+    text-transform: capitalize;
+    text-align: center;
+    color: rgb(198, 9, 9);
+}
+span{
+    color: rgb(198, 9, 9);
+    font-weight: bolder;
+    text-decoration: underline;
+}
+.iti{
+    color: rgb(71, 71, 142);
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+.top{
+    margin-left: 50%;
+    text-transform: capitalize;
+}
+h5{
+    text-align: center;
+    text-transform: capitalize;
+    color: rgb(92, 92, 139);
+}
+h3{
+    text-transform: capitalize;
+}
+.container{
+    display: flex;
+    align-items: center;
+    position: relative;
+ }
+ .container .box{
+    width: 50%;
+ }
+/* index page */
+.index_back{
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 140px);
+ 
+ }
+ .index_back img{
+     width: 100%;
+     max-width: 100%;
+     height: 100%;
+ }
+ /* end index */
+ /* start register */
+ .reg_content{
+    background-color: rgb(210, 231, 224);
+    width: 30%;
+    position: relative;
+    left: 35%;
+ }
+ .reg_content h2{
+    text-transform: capitalize;
+    padding: 10px;
+    color: rgb(17, 55, 43);
+ }
+ .reg_content .p_filed{
+    border: 3px dotted rgb(17, 55, 43);
+    padding: 10px;
+ }
+ .reg_content sup{
+    color: red;
+    text-decoration: none;
+    margin-right: 3px;
+ }
+ .reg_content form table td{
+    width: 50%;
+ }
+ .reg_content form table .tr1{
+    display: flex;
+    width: 100%;
+    background-color: rgb(189, 223, 212);
+    width: 200px;
+    padding: 1px;
+    justify-content: right;
+ }
+ .reg_content form .term{
+    display: flex;
+    justify-content: center;
+ }
+ .reg_content form .term span{
+    color: blue;
+ }
+ .reg_content form table .multi{
+    display: flex;
+
+ }
+ .reg_content form table .multi input{
+    width: 30%;
+ }
+ .reg_content form table .lab_mult{
+    font-size: 13px;
+ }
+ .reg_content .butt{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+ }
