@@ -178,7 +178,8 @@ else {
         alert(clock +" AM");
     }
     else if (clock >12 && clock <= 24) {
-        alert((clock-12) +" PM");   
+        alert((clock - 12) + " PM");
+        alert("done");
     }
 }
     
