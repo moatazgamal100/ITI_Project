@@ -1,6 +1,6 @@
-//-------------------------lab 3------------------------------------------------
-//--------------start pdf one---------------------------------
-// //-----------first task-----------------------------------------------------------
+// //-------------------------lab 3------------------------------------------------
+// //--------------start pdf one---------------------------------
+// // //-----------first task-----------------------------------------------------------
 var userName = prompt("Enter Your Username");
 var password = prompt("Enter Your Password");
 if (userName.toLowerCase() == "admin" & password=="421$$") {
@@ -9,9 +9,9 @@ if (userName.toLowerCase() == "admin" & password=="421$$") {
 else {
     alert("Which data entered wrong");
 }
-// /-------------/end first task---------------------------------------------------------------
+// // /-------------/end first task---------------------------------------------------------------
 
-//---------second task and ((((((((  bonus   ))))))))------------------------------------------------------
+// //---------second task and ((((((((  bonus   ))))))))------------------------------------------------------
 
 var firstNum = Number(prompt("Enter Your Num 1"));
 var operation = prompt("Enter The Operatoin");
@@ -49,13 +49,13 @@ function calc(x, o, y) {
 }
 calc(firstNum, operation, secondNum);
 
-// //-----------------end second task-------------------------------------------
+// // //-----------------end second task-------------------------------------------
 
-//--------------end pdf one---------------------------------
+// //--------------end pdf one---------------------------------
 
-//--------------start pdf two---------------------------------
+// //--------------start pdf two---------------------------------
 
-//----------- task one-------------------------------------------
+// //----------- task one-------------------------------------------
 var cont = Number(prompt("enter the num you want to enter"));
 var sum = 0;
 var ar = [];
@@ -67,9 +67,9 @@ for (var i = 1; i <= cont; i++){
 alert("The sum = "+sum)
 var avg = sum / cont;
 alert("The avg = "+avg);
-//------------end task one-------------------------------------------
+// //------------end task one-------------------------------------------
 
-//-------------start task two-------------------------
+// //-------------start task two-------------------------
 var arr = []
 var check;
 function addcontact() {
@@ -108,9 +108,9 @@ function addcontact() {
 }
 addcontact();
 
-//---------------end task two-------------------------------------------------
+// //---------------end task two-------------------------------------------------
 
-//--------------bouns pdf two-----------------------------------------------------
+// //--------------bouns pdf two-----------------------------------------------------
 var shape = prompt("Enter the shape you want").toLowerCase();
 var b = 3.14;
 var area;
@@ -161,6 +161,293 @@ switch (shape) {
 }
 //-------------end bonus pdf two-----------------------------
 
+// ---------------------------- 10 methods of object ---------------------------------------------------
+      //  (1) Object.key
+
+      // Object.key => return the keys of the object in an array not the values of the key!
+
+    // let obj = {
+    // name : "moataz",
+    // age: 25,
+    // isGraduated: true
+    // }
+
+    // let res = Object.keys(obj);
+    // console.log(res) // ['name', 'age', 'isGraduated']
+    // console.log(obj) // {name: 'moataz', age: 25, isGraduated: true}
+
+            // -------------------------------------------------
+
+      //  (2) Object.values() 
+
+        // Object.values => return the values of the object in an array 
+    // let obj = {
+    // name : "moataz",
+    // age: 25,
+    // isGraduated: true
+    // }
+
+    // let res = Object.values(obj);
+    // console.log(res) //  ['moataz', 25, true]
+
+             // -------------------------------------------------
+
+      //  (3) Object.create() 
+
+        // Object.create =>   Inherite the property to another  new object, and can add new property to the new object without adding it at the old one
+    //     let obj = {
+    //     name : "sara",
+    //     age: 25,
+    //     isGraduated: true
+    //   }
+
+    //   let newObject = Object.create(obj);
+
+    //   newObject.city = "Alex";
+    //   newObject.name = "moataz gamal"
+
+    //   console.log(newObject)  //{city: 'Alex', name: 'moataz gamal'}
+
+       // -------------------------------------------------
+
+      //  (4) Object.assign() 
+
+        // Object.assign => add the property of two objects into a new object, if a property is duplicated takes the last one and update it in the first obj
+    //     let obj = {
+    //     name : "moataz",
+    //     age: 25,
+    //     isGraduated: true
+    //   }
+
+    //   let obj2 = {
+    //     name : "mohamed",
+    //     city: "alex",
+    //     capital: "Cairo"
+    //   }
+
+    //   let res = Object.assign(obj, obj2);
+    //   console.log(obj) // {name: 'mohamed', age: 25, isGraduated: true, city: 'alex', capital: 'Cairo'}
+    //   console.log(obj2) // {name: 'mohamed', city: 'alex', capital: 'Cairo'}
+    //   console.log(res) // {name: 'mohamed', age: 25, isGraduated: true, city: 'alex', capital: 'Cairo'}
+
+      // -------------------------------------------------
+
+      //  (5) Object.entries() 
+
+        // Object.entries => return an array each element of it is an array of the property(key & value) of the object
+
+    //     let obj = {
+    //     name : "moataz",
+    //     age: 25,
+    //     isGraduated: true
+    //   }
+    //   let newObject = Object.entries(obj);
+
+    //   console.log(newObject)
+    //   [Array(2), Array(2), Array(2)]
+    //   [['name', 'moataz'], ['age', 25] , ['isGraduated', true]]
+
+      // -------------------------------------------------
+
+      //  (6) Object.fromEntries() 
+
+        // Object.fromEntries => transforms a list of key-value pairs into an object.
+
+    //     let list = [['name', 'sara'], ['age',25]];
+
+    //     let obj = Object.fromEntries(list);
+
+    //    console.log(obj); // {name: 'moataz', age: 25}
+
+      // -------------------------------------------------
+
+      //  (7) Object.freeze() 
+
+        // Object.freeze => makes a property or  the  whole obj's properties are fixed can't be updated
+    //     let obj = {
+    //     name : "moataz",
+    //     age: 25,
+    //     isGraduated: true
+    //   }
+
+
+    //   // Object.freeze(obj.name); // this freezes only the property name
+    //   Object.freeze(obj); // this freeze all properties
+    //   obj.name= "mohamed";
+    //   obj.age= 30;
+    //   console.log(obj.name); //moataz
+      // console.log(obj.age); //30
+
+      // console.log(obj)
+
+      // -------------------------------------------------
+
+      //  (8) Object.hasOwn() 
+
+        // Object.hasOwn => return ( true / false ) if the obj has the proerty return true and vise versa
+        //Object.hasOwn(x, y)
+        // x : is the object name
+        // y : is the key I ask about
+      //   let obj = {
+      //   name : "moataz",
+      //   age: 25,
+      //   isGraduated: true
+      // }
+
+      // let yes = Object.hasOwn(obj, 'name')
+      // let no = Object.hasOwn(obj, 'city')
+      // console.log(yes); // true
+      // console.log(no); // false
+
+      // -------------------------------------------------
+
+      //  (9) Object.is() 
+
+        // Object.is => determines whether two values are the same value.
+
+        // console.log(Object.is('1',1)) //false
+        // console.log(Object.is(1,1)) //true
+        // console.log(Object.is([],{})) //false
+        // console.log(Object.is('e','-e')) //false
+      
+        // -------------------------------------------------
+
+      // //  (10) Object.seal() 
+
+      //   // Object.seal => the property which is sealed can't be deleted but can be updated
+        
+      //   let obj = {
+      //   name : "moataz",
+      //   age: 25,
+      //   isGraduated: true
+      // }
+      // Object.seal(obj); // the obj is sealed with out it the expected value from delete would be true
+      // console.log(delete obj.name); //false
+      // console.log(obj.name); // moataz
+
+
+// ///////////////Array methods///////////////////////////////////
+// var arr = [2, 3, 4, 5, 6];
+
+// //[1]The array method toString()
+// // converts an array to a string of(comma separated) array values
+// alert(arr.toString());
+// /////////////////////////////////
+
+// //[2]The join() method also joins all array elements into a string
+// //in addition you can specify the separator
+// alert(arr.join("_"));
+// //////////////////////////////////////////////////
+
+// //[3]The array method push()
+// //Add new element to array in the last of array
+// arr.push(7);
+// alert(arr);
+// //////////////////////////////////////////////
+
+// //[4]The array method pop()
+// //Remove the last element of array
+// arr.pop();
+// alert(arr);
+// /////////////////////////////////////////
+
+// //[5]The array method unshift()
+// //Add new element to array in the first of array
+// arr.unshift(8);
+// alert(arr);
+// /////////////////////////////////////////
+
+// //[6]The array method unshift()
+// //Remove the first element of array
+// arr.shift();
+// alert(arr);
+// /////////////////////////////////////////
+
+
+// // [7]The concat() method creates a new array by merging
+// // (concatenating) existing arrays
+// var arr2=arr.concat(7, 8, 9)
+// alert(arr2);
+// /////////////////////////////////////////
+
+// //[8]The splice() method adds or remove and if necessary add new items in their place
+// arr.splice(1, 2, 8,9)
+// alert(arr);
+// /////////////////////////////////////////////////////////
+
+// //[9]The slice() method slices out a piece of an array
+// alert(arr.slice(2, 5));
+// ////////////////////////////////////////////////
+
+// // [10]The flat() method creates a new array
+// // with sub - array elements concatenated to a specified depth.
+// var arr3 = arr.flat();
+// alert(arr3);
+// ///////////////////////////////////////////////////////////
+
+
+
+
+//-----------------nested function and explain the closure -> lexicalenvironment-----------------------------------------
+
+// A closure is the combination of a function bundled together(enclosed) with references to its surrounding state(the lexical environment).
+// In other words, a closure gives you access to an outer function's scope from an inner function. In JavaScript,
+// closures are created every time a function is created, at function creation time.
+
+// function init() {
+//     var name = "moataz"; // name is a local variable created by init
+//     function displayName() {
+//       // displayName() is the inner function, that forms the closure
+//       alert(name); // use variable declared in the parent function
+//     }
+//     displayName();
+// }
+// init();
+
+// ///////////////////////////////////////////////////////////////////////////////////
+// //////////////////// solve problem solving//////////////////////////////////////////////////
+
+var houseRang = [];
+var countApple = 0;
+var countOrange = 0;
+
+var starPoint = Number(prompt("Enter the start point of home"));
+var endPoint = Number(prompt("Enter the end point of home"));
+var locationAppleTree = Number(prompt("Enter the locationAppleTree point "));
+var locationOrangeTree = Number(prompt("Enter the locationOrangeTree point "));
+var numberOfApple = Number(prompt("Enter the number of apple "));
+var numberOfOrande = Number(prompt("Enter the number of orande "));
+var appArr = [];
+var oranArr = [];
+
+function getCount(startPointOfHome, endPointOfHome,locAppleTree,locOrangTree,applesFall,orangsFall) {
+    for (var i = startPointOfHome; i<= endPointOfHome; i++){
+        houseRang.push(i);
+    }
+    
+    for (var y = 0; y< applesFall; y++){
+        var app = Number(prompt("Enter apple distance of fall"));
+        appArr.push(app);
+        if (houseRang.includes(appArr[y]+locAppleTree) == true) {
+            countApple++;
+        }
+    }
+    for (var d =0; d<orangsFall; d++){
+        var oran = Number(prompt("Enter orange distance of fall"));
+        oranArr.push(oran);
+        if (houseRang.includes(oranArr[d]+locOrangTree) == true) {
+            countOrange++;
+        }
+    }
+    alert("the number of apple fallen in house = " + countApple);
+    alert("the number of orange fallen in house = " + countOrange);
+}
+
+getCount(starPoint, endPoint,locationAppleTree,locationOrangeTree,numberOfApple,numberOfOrande);
+
+
+///////////////////////////////////////////////////////////////////////////////////
+//////////////////// end problem solving//////////////////////////////////////////////////
 
 
 
@@ -201,6 +488,9 @@ switch (shape) {
 
 
 
+
+
+//----------my own code----------------------------------------------------
 
 // // window.alert("hello from javascribt");
 // // document.getElementById("java").innerHTML = "hello world from javascribt";
